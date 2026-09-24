@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | ผลงาน - นักศึกษาสาขาสื่อนฤมิต</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Glowing Orbs Background -->
+  <div class="bg-ambient">
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-spinner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-text">PORTFOLIO • CREATIVE MEDIA</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar scrolled">
+      <div class="container">
+        <a class="navbar-brand-custom" href="index.html#home">
+          <div class="brand-icon-wrapper">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <span class="brand-text">CM<span class="text-gradient-yellow">FOLIO</span></span>
+          <span class="brand-badge d-none d-sm-inline">CREATIVE MEDIA</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Theme" title="สลับโหมดสว่าง/มืด">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html#home"><i class="fa-solid fa-house-chimney me-1"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-user me-1"></i> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fa-solid fa-layer-group me-1"></i> Skills</a></li>
+            <li class="nav-item"><a class="nav-link active" href="portfolio.html"><i class="fa-solid fa-briefcase me-1"></i> Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content: Portfolio Showcase Page -->
+  <main style="padding-top: 130px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+        <h1 class="section-title">รวมผลงานเด่น <span class="text-gradient">(6 Featured Works)</span></h1>
+        <p class="section-subtitle">
+          คัดสรร 6 โครงงานสร้างสรรค์ในสาขาสื่อนฤมิต กดคลิก "ดูผลงาน" เพื่อดูแนวคิด เครื่องมือ และรายละเอียดเชิงลึกของแต่ละชิ้นงาน
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters reveal-init">
+        <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all me-1"></i> ทั้งหมด</button>
+        <button class="filter-btn" data-filter="motion"><i class="fa-solid fa-wand-magic-sparkles me-1"></i> Motion & 3D</button>
+        <button class="filter-btn" data-filter="branding"><i class="fa-solid fa-palette me-1"></i> Branding & Graphic</button>
+        <button class="filter-btn" data-filter="photo"><i class="fa-solid fa-camera me-1"></i> Photography</button>
+        <button class="filter-btn" data-filter="web"><i class="fa-solid fa-laptop-code me-1"></i> UI/UX & Web</button>
+        <button class="filter-btn" data-filter="ai"><i class="fa-solid fa-brain me-1"></i> AI & Film</button>
+      </div>
+
+      <!-- 6 Projects Responsive Grid -->
+      <div class="portfolio-grid mb-5">
+        <!-- Project 1: Cyberpunk Neo-Bangkok -->
+        <div class="portfolio-item reveal-init" data-category="motion">
+          <div class="glass-card portfolio-card">
+            <div class="portfolio-thumb-wrapper">
+              <span class="portfolio-badge">Motion & 3D</span>
+              <img src="assets/images/project-1-motion.svg" alt="Cyberpunk Neo-Bangkok" class="portfolio-img">
+              <div class="portfolio-overlay"><i class="fa-solid fa-arrow-up-right-from-square text-warning fs-4"></i></div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta"><span class="portfolio-category-text">3D Animation</span><span class="portfolio-year">2026</span></div>
+              <h3 class="portfolio-title">CYBERPUNK NEO-BANGKOK</h3>
+              <p class="portfolio-desc">งานแอนิเมชัน 3 มิติแนว Cyberpunk ผสมผสานสถาปัตยกรรมกรุงเทพมหานครแห่งอนาคต ถ่ายทอดการเคลื่อนไหวของแสงนีออน ป้ายโฮโลแกรม และเมืองดิจิทัล</p>
+              <div class="portfolio-footer">
+                <button class="btn-view-project" data-project-id="1"><i class="fa-solid fa-circle-info"></i> ดูผลงาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Lumina Coffee Roasters -->
+        <div class="portfolio-item reveal-init reveal-delay-1" data-category="branding">
+          <div class="glass-card portfolio-card">
+            <div class="portfolio-thumb-wrapper">
+              <span class="portfolio-badge">Graphic & Branding</span>
+              <img src="assets/images/project-2-branding.svg" alt="Lumina Coffee Roasters" class="portfolio-img">
+              <div class="portfolio-overlay"><i class="fa-solid fa-arrow-up-right-from-square text-warning fs-4"></i></div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta"><span class="portfolio-category-text">Brand Identity</span><span class="portfolio-year">2025</span></div>
+              <h3 class="portfolio-title">LUMINA COFFEE ROASTERS</h3>
+              <p class="portfolio-desc">การออกแบบอัตลักษณ์แบรนด์ร้านกาแฟคั่วบดพรีเมียม โลโก้ มู้ดโทน บรรจุภัณฑ์ซองกาแฟ และสื่อประชาสัมพันธ์ ดีไซน์เรียบหรูระดับสากล</p>
+              <div class="portfolio-footer">
+                <button class="btn-view-project" data-project-id="2"><i class="fa-solid fa-circle-info"></i> ดูผลงาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Aurora Festival 2026 -->
+        <div class="portfolio-item reveal-init reveal-delay-2" data-category="photo">
+          <div class="glass-card portfolio-card">
+            <div class="portfolio-thumb-wrapper">
+              <span class="portfolio-badge">Photography</span>
+              <img src="assets/images/project-3-photo.svg" alt="Aurora Festival 2026" class="portfolio-img">
+              <div class="portfolio-overlay"><i class="fa-solid fa-arrow-up-right-from-square text-warning fs-4"></i></div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta"><span class="portfolio-category-text">Event Photography</span><span class="portfolio-year">2026</span></div>
+              <h3 class="portfolio-title">AURORA FESTIVAL 2026</h3>
+              <p class="portfolio-desc">ชุดภาพถ่ายบันทึกบรรยากาศเทศกาลดนตรีและศิลปะแสงไฟยามค่ำคืน การจัดองค์ประกอบภาพในสภาวะแสงน้อย และการเกลี่ยสี Cinematic</p>
+              <div class="portfolio-footer">
+                <button class="btn-view-project" data-project-id="3"><i class="fa-solid fa-circle-info"></i> ดูผลงาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Metaverse Art Gallery -->
+        <div class="portfolio-item reveal-init" data-category="web">
+          <div class="glass-card portfolio-card">
+            <div class="portfolio-thumb-wrapper">
+              <span class="portfolio-badge">UI/UX & Web</span>
+              <img src="assets/images/project-4-uiux.svg" alt="Metaverse Art Gallery" class="portfolio-img">
+              <div class="portfolio-overlay"><i class="fa-solid fa-arrow-up-right-from-square text-warning fs-4"></i></div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta"><span class="portfolio-category-text">Web Interaction</span><span class="portfolio-year">2025</span></div>
+              <h3 class="portfolio-title">METAVERSE ART GALLERY</h3>
+              <p class="portfolio-desc">ออกแบบระบบอินเทอร์เฟซ UI/UX สำหรับชมนิทรรศการศิลปะเสมือนจริง โครงสร้าง Responsive สวยงาม พร้อมระบบนำชมแบบ Interactive Hotspot</p>
+              <div class="portfolio-footer">
+                <button class="btn-view-project" data-project-id="4"><i class="fa-solid fa-circle-info"></i> ดูผลงาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Echoes of Nature -->
+        <div class="portfolio-item reveal-init reveal-delay-1" data-category="ai">
+          <div class="glass-card portfolio-card">
+            <div class="portfolio-thumb-wrapper">
+              <span class="portfolio-badge">Video Editing</span>
+              <img src="assets/images/project-5-film.svg" alt="Echoes of Nature" class="portfolio-img">
+              <div class="portfolio-overlay"><i class="fa-solid fa-arrow-up-right-from-square text-warning fs-4"></i></div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta"><span class="portfolio-category-text">Cinematography</span><span class="portfolio-year">2025</span></div>
+              <h3 class="portfolio-title">ECHOES OF NATURE</h3>
+              <p class="portfolio-desc">หนังสั้นเชิงสารคดีสิ่งแวดล้อม การลำดับภาพแบบ Dynamic การเกลี่ยสี Color Grading ด้วย DaVinci Resolve ในโทนอารมณ์ที่ทรงพลัง</p>
+              <div class="portfolio-footer">
+                <button class="btn-view-project" data-project-id="5"><i class="fa-solid fa-circle-info"></i> ดูผลงาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Synthesis AI Lab -->
+        <div class="portfolio-item reveal-init reveal-delay-2" data-category="ai">
+          <div class="glass-card portfolio-card">
+            <div class="portfolio-thumb-wrapper">
+              <span class="portfolio-badge">AI Generative</span>
+              <img src="assets/images/project-6-ai.svg" alt="Synthesis AI Lab" class="portfolio-img">
+              <div class="portfolio-overlay"><i class="fa-solid fa-arrow-up-right-from-square text-warning fs-4"></i></div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta"><span class="portfolio-category-text">Future Media</span><span class="portfolio-year">2026</span></div>
+              <h3 class="portfolio-title">SYNTHESIS AI LAB</h3>
+              <p class="portfolio-desc">การทดลองสร้างสรรค์ภาพและโมเดลด้วย Generative AI ผสานทักษะ Art Direction เพื่อสำรวจขอบเขตใหม่ของสื่อนฤมิตในยุคปัญญาประดิษฐ์</p>
+              <div class="portfolio-footer">
+                <button class="btn-view-project" data-project-id="6"><i class="fa-solid fa-circle-info"></i> ดูผลงาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation CTA -->
+      <div class="text-center">
+        <a href="contact.html" class="btn-primary-custom me-2">
+          <i class="fa-solid fa-paper-plane"></i> สนใจติดต่อหรือจ้างงาน
+        </a>
+        <a href="index.html#home" class="btn-outline-custom">
+          <i class="fa-solid fa-house"></i> กลับสู่หน้าหลัก
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div class="modal fade portfolio-modal" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="badge bg-primary text-light mb-1" id="modalProjectCategory">Category</span>
+            <h4 class="modal-title fw-bold" id="modalProjectTitle">Project Title</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img src="" id="modalProjectImg" class="modal-project-img" alt="Project Preview">
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <small class="text-muted d-block fw-semibold">ประเภท / ลูกค้า</small>
+              <strong id="modalProjectClient" class="text-primary">-</strong>
+            </div>
+            <div class="col-sm-6">
+              <small class="text-muted d-block fw-semibold">ปีที่ผลิตผลงาน</small>
+              <strong id="modalProjectYear" class="text-warning">-</strong>
+            </div>
+          </div>
+          <h5 class="fs-6 fw-bold mb-2">คำอธิบายผลงาน (Project Concept)</h5>
+          <p id="modalProjectDesc" class="text-muted mb-4"></p>
+          <h5 class="fs-6 fw-bold mb-2">เครื่องมือและซอฟต์แวร์ที่ใช้ (Tools & Software)</h5>
+          <div id="modalProjectTools" class="mb-4"></div>
+          <div class="text-end">
+            <a href="#" id="modalProjectLink" target="_blank" rel="noopener" class="btn-primary-custom">
+              <i class="fa-brands fa-behance"></i> ดูรายละเอียดผลงานเต็มบน Behance
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="copyright-text">© 2026 My Portfolio</p>
+      <p class="designer-text">Designed by Your Name</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

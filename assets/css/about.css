@@ -1,0 +1,196 @@
+/* ===================================================================
+   * STYLESHEET: About Me Section
+   * Section: #about (Personal Bio, Education, Interests, Goals)
+   =================================================================== */
+
+.about-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Feature Highlights Grid */
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.stat-card {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--accent-yellow);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Info Cards for Bio, Education, Interests, Goals */
+.about-card {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0.8;
+}
+
+.about-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.about-card-title {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-card-desc {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+/* Education Timeline Card */
+.education-item {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-yellow);
+  box-shadow: 0 0 8px var(--accent-yellow);
+}
+
+.education-item::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 20px;
+  bottom: -15px;
+  width: 2px;
+  background: var(--border-subtle);
+}
+
+.education-item:last-child::after {
+  display: none;
+}
+
+.edu-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.edu-school {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Interest Tags */
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  transition: all var(--transition-fast);
+}
+
+.interest-tag:hover {
+  background: rgba(14, 165, 233, 0.15);
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+/* Career Goal Highlight Box */
+.goal-quote-box {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(250, 204, 21, 0.08) 100%);
+  border: 1px solid rgba(250, 204, 21, 0.25);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+.goal-quote-box i.quote-icon {
+  font-size: 1.75rem;
+  color: var(--accent-yellow);
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.goal-text {
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--text-main);
+  line-height: 1.7;
+}

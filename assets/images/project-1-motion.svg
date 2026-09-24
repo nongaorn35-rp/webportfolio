@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="neonYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="800" height="450" fill="url(#cyberSky)"/>
+
+  <!-- Cyber Sun / Giant Wireframe Hologram -->
+  <circle cx="400" cy="220" r="140" fill="none" stroke="url(#neonYellow)" stroke-width="2" opacity="0.6"/>
+  <circle cx="400" cy="220" r="110" fill="none" stroke="url(#neonCyan)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.7"/>
+  <circle cx="400" cy="220" r="80" fill="#facc15" opacity="0.08"/>
+
+  <!-- Perspective 3D Grid Floor -->
+  <g opacity="0.4">
+    <!-- Grid Horizon -->
+    <line x1="0" y1="280" x2="800" y2="280" stroke="#0ea5e9" stroke-width="2"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="0" y1="330" x2="800" y2="330" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="0" y1="375" x2="800" y2="375" stroke="#0ea5e9" stroke-width="2"/>
+    <line x1="0" y1="435" x2="800" y2="435" stroke="#38bdf8" stroke-width="3"/>
+
+    <!-- Perspective Rays -->
+    <line x1="400" y1="280" x2="-200" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="0" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="160" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="320" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="400" y2="450" stroke="#facc15" stroke-width="2"/>
+    <line x1="400" y1="280" x2="480" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="640" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="800" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="1000" y2="450" stroke="#0ea5e9" stroke-width="1.5"/>
+  </g>
+
+  <!-- Neo-Bangkok Futuristic Skyline Silhouettes -->
+  <polygon points="60,280 60,180 120,180 120,280" fill="#090d16" stroke="#0ea5e9" stroke-width="1.5"/>
+  <polygon points="130,280 130,130 170,90 210,130 210,280" fill="#0b1120" stroke="#38bdf8" stroke-width="1.5"/>
+  <polygon points="230,280 230,150 280,150 280,280" fill="#090d16" stroke="#facc15" stroke-width="1.5"/>
+  <polygon points="520,280 520,140 580,140 580,280" fill="#0b1120" stroke="#38bdf8" stroke-width="1.5"/>
+  <polygon points="600,280 600,100 650,60 700,100 700,280" fill="#090d16" stroke="#facc15" stroke-width="1.5"/>
+  <polygon points="720,280 720,170 770,170 770,280" fill="#0b1120" stroke="#0ea5e9" stroke-width="1.5"/>
+
+  <!-- Holographic Floating Motion Graphic Elements -->
+  <!-- 3D Cube Wireframe in Space -->
+  <g transform="translate(360, 110)">
+    <!-- Top Face -->
+    <polygon points="40,10 75,30 40,50 5,30" fill="rgba(14, 165, 233, 0.25)" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Left Face -->
+    <polygon points="5,30 40,50 40,90 5,70" fill="rgba(14, 165, 233, 0.4)" stroke="#0ea5e9" stroke-width="2"/>
+    <!-- Right Face -->
+    <polygon points="40,50 75,30 75,70 40,90" fill="rgba(250, 204, 21, 0.35)" stroke="#facc15" stroke-width="2"/>
+  </g>
+
+  <!-- Neon Motion Trails -->
+  <path d="M 100 350 C 250 280, 500 400, 700 320" fill="none" stroke="url(#neonYellow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 80 370 C 280 310, 480 430, 720 340" fill="none" stroke="url(#neonCyan)" stroke-width="2" stroke-dasharray="10 8" stroke-linecap="round"/>
+
+  <!-- Badge / Title Overlay -->
+  <rect x="40" y="40" width="180" height="34" rx="8" fill="rgba(11, 15, 25, 0.85)" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="55" y="62" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" letter-spacing="1">3D MOTION GRAPHIC</text>
+
+  <rect x="40" y="85" width="280" height="42" rx="8" fill="rgba(11, 15, 25, 0.85)" stroke="#facc15" stroke-width="1"/>
+  <text x="55" y="112" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" letter-spacing="0.5">CYBERPUNK NEO-BKK</text>
+</svg>

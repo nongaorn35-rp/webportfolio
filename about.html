@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | เกี่ยวกับตัวผม - นักศึกษาสาขาสื่อนฤมิต</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Glowing Orbs Background -->
+  <div class="bg-ambient">
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-spinner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-text">ABOUT ME • CREATIVE MEDIA</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar scrolled">
+      <div class="container">
+        <a class="navbar-brand-custom" href="index.html#home">
+          <div class="brand-icon-wrapper">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <span class="brand-text">CM<span class="text-gradient-yellow">FOLIO</span></span>
+          <span class="brand-badge d-none d-sm-inline">CREATIVE MEDIA</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Theme" title="สลับโหมดสว่าง/มืด">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html#home"><i class="fa-solid fa-house-chimney me-1"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html"><i class="fa-solid fa-user me-1"></i> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fa-solid fa-layer-group me-1"></i> Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html"><i class="fa-solid fa-briefcase me-1"></i> Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content: Detailed About Section -->
+  <main style="padding-top: 130px; padding-bottom: 80px;">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header reveal-init">
+        <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Biography & Career</span>
+        <h1 class="section-title">เกี่ยวกับ<span class="text-gradient">ตัวผม (About Me)</span></h1>
+        <p class="section-subtitle">
+          ประวัติการศึกษา ความหลงใหลในศิลปะดิจิทัล และเส้นทางสู่การเป็นนักสร้างสรรค์สื่อนฤมิตมืออาชีพ
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-4 text-center reveal-init">
+          <div class="glass-card p-4 text-center">
+            <img src="assets/images/avatar.svg" alt="รูปโปรไฟล์" style="width: 220px; height: 220px; border-radius: 50%; border: 4px solid var(--primary-blue);" class="mb-3">
+            <h3 class="fs-4 fw-bold mb-1">กิตติพงษ์ วิริยะกุล</h3>
+            <p class="text-gradient-yellow fw-semibold mb-2">Creative Media Student</p>
+            <p class="small text-muted mb-3">มหาวิทยาลัยชั้นนำ • ชั้นปีที่ 4</p>
+            <a href="contact.html" class="btn-primary-custom w-100 justify-content-center">
+              <i class="fa-solid fa-envelope"></i> ติดต่อร่วมงาน
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-8 reveal-init reveal-delay-1">
+          <div class="glass-card about-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="about-card-title">ความมุ่งมั่น & ประวัติย่อ</h3>
+            <p class="about-card-desc">
+              ผมเป็นนักศึกษาที่มีความหลงใหลใน <strong>สาขาสื่อนฤมิต (Creative Media)</strong> โดยนิยามคำว่า "สื่อนฤมิต" คือการสร้างสรรค์สื่อดิจิทัลที่ก้าวข้ามขอบเขตเดิม ๆ ด้วยการผสานผสานระหว่าง ศิลปะภาพนิ่ง (Visual Design), ภาพเคลื่อนไหว (Motion Design), เสียง (Sound), ปฏิสัมพันธ์ (Interaction) และปัญญาประดิษฐ์ (Generative AI)
+            </p>
+            <p class="about-card-desc">
+              ตลอดระยะเวลาการศึกษา ได้พัฒนาโครงงานที่เน้นการแก้ปัญหาจริงให้กับผู้ใช้งาน ไม่ว่าจะเป็นงานสร้างอัตลักษณ์แบรนด์, การผลิตแอนิเมชัน 3 มิติ, และการออกแบบหน้าจอ Web UI ที่ใช้งานได้ง่ายและสร้างความประทับใจ
+            </p>
+
+            <div class="goal-quote-box">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <h5 class="fs-6 fw-bold mb-1 text-primary">เป้าหมายสูงสุดในสายอาชีพ (Ultimate Career Goal)</h5>
+              <p class="goal-text mb-0">
+                ก้าวสู่ตำแหน่ง <strong>Creative Multimedia Director</strong> เพื่อนำทีมสร้างสรรค์ผลงานดิจิทัลอาร์ตระดับแนวหน้า และร่วมยกระดับวงการอุตสาหกรรมสร้างสรรค์ (Creative Industry) ของประเทศไทยสู่ระดับสากล
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Timeline -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-6 reveal-init">
+          <div class="glass-card about-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="about-card-title">ประวัติการศึกษา (Education)</h3>
+            <div class="education-timeline mt-3">
+              <div class="education-item">
+                <div class="edu-year">2023 - ปัจจุบัน</div>
+                <div class="edu-degree">ปริญญาตรี ศิลปกรรมศาสตร์ / เทคโนโลยีสื่อนฤมิต</div>
+                <div class="edu-school">สาขาสื่อนฤมิต (Creative Media)</div>
+                <div class="small text-muted mt-1">เกรดเฉลี่ยสะสม 3.75 (เกียรตินิยมอันดับ 1 ในเป้าหมาย)</div>
+              </div>
+              <div class="education-item">
+                <div class="edu-year">2020 - 2023</div>
+                <div class="edu-degree">มัธยมศึกษาตอนปลาย แผนการเรียนศิลปะ-คำนวณ</div>
+                <div class="edu-school">เน้นวิชาคอมพิวเตอร์กราฟิกและสื่อประสม</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal-init reveal-delay-1">
+          <div class="glass-card about-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="about-card-title">รางวัล & ความสำเร็จ (Achievements)</h3>
+            <div class="education-timeline mt-3">
+              <div class="education-item">
+                <div class="edu-year">2026</div>
+                <div class="edu-degree">รางวัลชนะเลิศ การประกวด Motion Graphic หัวข้อ Smart City</div>
+                <div class="edu-school">ระดับอุดมศึกษาภาคกลาง</div>
+              </div>
+              <div class="education-item">
+                <div class="edu-year">2025</div>
+                <div class="edu-degree">รองชนะเลิศอันดับ 1 UI/UX Design Hackathon</div>
+                <div class="edu-school">การออกแบบแอปพลิเคชันเพื่อสังคม</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Landing Page CTA -->
+      <div class="text-center mt-4">
+        <a href="index.html#portfolio" class="btn-primary-custom me-2">
+          <i class="fa-solid fa-arrow-left"></i> กลับไปดูผลงานหน้าหลัก
+        </a>
+        <a href="skills.html" class="btn-outline-custom">
+          ดูทักษะทั้งหมด <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="copyright-text">© 2026 My Portfolio</p>
+      <p class="designer-text">Designed by Your Name</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
