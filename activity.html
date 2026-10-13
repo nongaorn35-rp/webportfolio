@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="กิจกรรมและการเข้าร่วมอบรมเชิงปฏิบัติการ (Workshops & Activities) - Benchawan Runnaphong สื่อนฤมิต">
+  <meta name="author" content="Benchawan Runnaphong">
+  <title>Activity | Benchawan Runnaphong - Creative Media Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Silkscreen (Pixel Heading), Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/activity.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Glowing Orbs Background -->
+  <div class="bg-ambient">
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+  </div>
+
+  <!-- Preloader Loading Animation -->
+  <div id="preloader">
+    <div class="loader-spinner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-text">CREATIVE MEDIA PORTFOLIO</div>
+  </div>
+
+  <!-- Header & Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <!-- Brand Logo: [B] BENCHAWAN -->
+        <a class="navbar-brand-custom" href="index.html">
+          <div class="brand-square-b">
+            <span>B</span>
+          </div>
+          <span class="brand-text-spooky">BENCHAWAN</span>
+        </a>
+
+        <!-- Right Side: Mobile Toggler -->
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house-chimney me-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html"><i class="fa-solid fa-graduation-cap me-1"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-briefcase me-1"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="activity.html"><i class="fa-solid fa-calendar-check me-1"></i> Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-glow"></div>
+    <div class="container position-relative">
+      <div class="section-title-wrapper reveal">
+        <span class="section-tag">✦ EXPERIENCES & WORKSHOPS ✦</span>
+        <h1 class="about-pixel-title">Activity</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Section -->
+  <section class="activity-section pt-0">
+    <div class="container">
+      
+      <!-- Category Filter Tabs -->
+      <div class="activity-filters reveal">
+        <button class="activity-filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="activity-filter-btn" data-filter="workshop">การอบรมและเวิร์กช็อป</button>
+        <button class="activity-filter-btn" data-filter="competition">การแข่งขันและรางวัล</button>
+        <button class="activity-filter-btn" data-filter="activity">โครงงานและกิจกรรม</button>
+        <button class="activity-filter-btn" data-filter="volunteer">ค่ายและจิตอาสา</button>
+      </div>
+
+      <!-- Activity Grid Items -->
+      <div class="row g-4" id="activityGrid">
+
+        <!-- Activity 1: Motion Workshop -->
+        <div class="col-md-6 col-lg-4 activity-item" data-category="workshop">
+          <div class="card-glass activity-card">
+            <div class="activity-img-wrapper">
+              <img src="assets/images/activity1.jpg" alt="VDO Content Creator" class="activity-img" loading="lazy">
+              <span class="activity-badge">Workshop </span>
+              <span class="activity-date-badge">ส.ค. 2568</span>
+            </div>
+            <div class="activity-body">
+              <div class="activity-organizer">
+                ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
+              </div>
+              <h3 class="activity-title">VDO Content Creator มือใหม่สร้างคอนเทนต์ระดับโปร</h3>
+              <p class="activity-desc">
+                คลาสนี้ออกแบบมาเพื่อมือใหม่ที่อยากสร้างวิดีโอคอนเทนต์คุณภาพระดับโปร สอนโดย Content Creator ตัวจริง ที่มีประสบการณ์ตรงในสายงาน
+              </p>
+              <div class="activity-footer">
+                <span class="activity-role"><i class="fa-solid fa-user-check me-1"></i>ผู้เข้าร่วมอบรม</span>
+                <button class="btn btn-outline-custom btn-sm activity-btn" data-bs-toggle="modal" data-bs-target="#activityModal1">
+                  ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 2: Hackathon -->
+        <div class="col-md-6 col-lg-4 activity-item" data-category="competition">
+          <div class="card-glass activity-card">
+            <div class="activity-img-wrapper">
+              <img src="assets/images/activity2.jpeg" alt="TikTok Content" class="activity-img" loading="lazy">
+              <span class="activity-badge">Competition</span>
+              <span class="activity-date-badge">ก.ค. 2569</span>
+            </div>
+            <div class="activity-body">
+              <div class="activity-organizer">
+                ศิลป์สืบปณิธาน แม่แห่งแผ่นดิน
+              </div>
+              <h3 class="activity-title">รางวัลรองชนะเลิศอันดับ 1 ประเภท Vertical Microfilm – TikTok Content</h3>
+              <p class="activity-desc">
+                ได้รับรางวัลรองชนะเลิศอันดับ 1 ประเภท Vertical Microfilm – TikTok Content โครงการประกวดและนิทรรศการศิลปะระดับอุดมศึกษา ภายใต้หัวข้อ “ศิลป์สืบปณิธาน แม่แห่งแผ่นดิน โดยส่งแข่งเป็นทีมในชื่อ "Loserwarning"”
+              </p>
+              <div class="activity-footer">
+                <span class="activity-role"><i class="fa-solid fa-award me-1"></i>รองชนะเลิศอันดับ 1</span>
+                <button class="btn btn-outline-custom btn-sm activity-btn" data-bs-toggle="modal" data-bs-target="#activityModal2">
+                  ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 3: AI Seminar -->
+        <div class="col-md-6 col-lg-4 activity-item" data-category="activity">
+          <div class="card-glass activity-card">
+            <div class="activity-img-wrapper">
+              <img src="assets/images/activity3.jpg" alt="Gen-AI Seminar" class="activity-img" loading="lazy">
+              <span class="activity-badge">activity</span>
+              <span class="activity-date-badge">ก.พ. 2569</span>
+            </div>
+            <div class="activity-body">
+              <div class="activity-organizer">
+                ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
+              </div>
+              <h3 class="activity-title">พิธีรับมอบเสื้อช็อป CMD</h3>
+              <p class="activity-desc">
+                เข้าร่วมพิธีรับมอบเสื้อช็อป CMD หลังจากผ่านการเข้าร่วมกิจกรรมภายในสาขา
+              </p>
+              <div class="activity-footer">
+                <span class="activity-role"><i class="fa-solid fa-microphone me-1"></i>ผู้เข้าร่วม</span>
+                <button class="btn btn-outline-custom btn-sm activity-btn" data-bs-toggle="modal" data-bs-target="#activityModal3">
+                  ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 4: Exhibition -->
+        <div class="col-md-6 col-lg-4 activity-item" data-category="activity">
+          <div class="card-glass activity-card">
+            <div class="activity-img-wrapper">
+              <img src="assets/images/activity4.jpg" alt="Creative Media Show" class="activity-img" loading="lazy">
+              <span class="activity-badge">Activity</span>
+              <span class="activity-date-badge">ก.ค. 2568</span>
+            </div>
+            <div class="activity-body">
+              <div class="activity-organizer">
+                </i> ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
+              </div>
+              <h3 class="activity-title">โครงการสายสัมพันธ์น้องใหม่ลูกยาง #8</h3>
+              <p class="activity-desc">
+                จัดโครงการรับน้องสานสัมพันธ์น้องใหม่ลูกยาง #8 ที่เต็มไปด้วยความสนุกมากมาย  
+              </p>
+              <div class="activity-footer">
+                <span class="activity-role"><i class="fa-solid fa-user-gear me-1"></i>ผู้ร่วมจัดงาน</span>
+                <button class="btn btn-outline-custom btn-sm activity-btn" data-bs-toggle="modal" data-bs-target="#activityModal4">
+                  ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 5: Volunteer Camp -->
+        <div class="col-md-6 col-lg-4 activity-item" data-category="volunteer">
+          <div class="card-glass activity-card">
+            <div class="activity-img-wrapper">
+              <img src="assets/images/activity5.png" alt="Media Volunteer Camp" class="activity-img" loading="lazy">
+              <span class="activity-badge">Volunteer</span>
+              <span class="activity-date-badge">มิ.ย. 2568</span>
+            </div>
+            <div class="activity-body">
+              <div class="activity-organizer">
+                ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
+              </div>
+              <h3 class="activity-title">พาน้องลงทะเบียนเรียน สาขา สื่อนฤมิต CMD68 🌱🌱</h3>
+              <p class="activity-desc">
+                กิจกรรมช่วยน้องลงทะเบียนเรียน ในวันที่ 20 มิถุนายน 2568 พี่ๆ ปี 2 และ 3 ร่วมช่วยกันพาน้องลงทะเบียนเรียน
+              </p>
+              <div class="activity-footer">
+                <span class="activity-role"><i class="fa-solid fa-user-gear me-1"></i>ทีมงาน</span>
+                <button class="btn btn-outline-custom btn-sm activity-btn" data-bs-toggle="modal" data-bs-target="#activityModal5">
+                  ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 6: Training Class -->
+        <div class="col-md-6 col-lg-4 activity-item" data-category="workshop">
+          <div class="card-glass activity-card">
+            <div class="activity-img-wrapper">
+              <img src="assets/images/activity6.jpg" alt="Color Grading Master" class="activity-img" loading="lazy">
+              <span class="activity-badge">Workshop</span>
+              <span class="activity-date-badge">มี.ค. 2569</span>
+            </div>
+            <div class="activity-body">
+              <div class="activity-organizer">
+                ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
+              </div>
+              <h3 class="activity-title">Workshop Visual Development! 🎨✨</h3>
+              <p class="activity-desc">
+                Workshop เทคนิคการวาง Concept งานแอนิเมชัน และแรงบันดาลใจ จากวิทยากร คุณ Amo Kannika
+              </p>
+              <div class="activity-footer">
+                <span class="activity-role"><i class="fa-solid fa-user-check me-1"></i>ผู้เข้าร่วมอบรม</span>
+                <button class="btn btn-outline-custom btn-sm activity-btn" data-bs-toggle="modal" data-bs-target="#activityModal6">
+                  ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Detail Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="activityModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold">AVDO Content Creator มือใหม่สร้างคอนเทนต์ระดับโปร</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/activity1.jpg" alt="Workshop" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">รายละเอียดและองค์ความรู้ที่ได้รับ</h4>
+          <p class="text-light">คลาสนี้ออกแบบมาเพื่อมือใหม่ที่อยากสร้างวิดีโอคอนเทนต์คุณภาพระดับโปร สอนโดย Content Creator ตัวจริง ที่มีประสบการณ์ตรงในสายงาน และควบตำแหน่งผู้สอนที่ได้รับการรับรองจาก Blackmagic Design  เรียนจริง ทำจริง กับผู้เชี่ยวชาญสายโปรดักชัน</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ผู้จัด: </strong> ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">สถานที่: </strong> ห้อง IT-405 และ IT-407 คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ทักษะที่ได้: </strong> DaVinci Resolve</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">วันที่จัด: </strong> วันศุกร์ที่ 8 สิงหาคม 2568 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="activityModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold">รางวัลรองชนะเลิศอันดับ 1 ประเภท Vertical Microfilm – TikTok Content</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/activity2.jpeg" alt="Hackathon" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">ผลการแข่งขันและผลงานที่พัฒนา</h4>
+          <p class="text-light">ได้รับรางวัลรองชนะเลิศอันดับ 1 ประเภท Vertical Microfilm – TikTok Content โครงการประกวดและนิทรรศการศิลปะระดับอุดมศึกษา ภายใต้หัวข้อ “ศิลป์สืบปณิธาน แม่แห่งแผ่นดิน” เพื่อน้อมรำลึกในพระมหากรุณาธิคุณสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง ผู้ทรงอุทิศพระวรกายในการทำนุบำรุงศิลปวัฒนธรรมไทย โดยเฉพาะงานศิลปาชีพ ผ้าไทย หัตถกรรม และศิลปะพื้นบ้านทั่วประเทศ ซึ่งมีผลงานส่งเข้าประกวดกว่า 2,500 </p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ผู้จัด: </strong> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">สถานที่: </strong> กรุงเทพมหานคร</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ทักษะที่ได้: </strong> การบริหารจัดการโครงการ และการสื่อสาร</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">วันที่จัด: </strong> วันที่ 6 กรกฏาคม 2569 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="activityModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold">Workshop Visual Development! 🎨✨</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/activity3.jpg" alt="AI Seminar" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">พิธีรับมอบเสื้อช็อป CMD</h4>
+          <p class="text-light">เข้าร่วมพิธีรับมอบเสื้อช็อป CMD หลังจากผ่านการเข้าร่วมกิจกรรมภายในสาขา</p>
+        <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ผู้จัด: </strong> ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">สถานที่: </strong> ห้องฉายภาพยนตร์ คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ทักษะที่ได้: </strong> </div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">วันที่จัด: </strong> วันที่ 1 กุมภาพันธ์ 2569 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="activityModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold">โครงการสายสัมพันธ์น้องใหม่ลูกยาง #8</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/activity4.jpg" alt="Exhibition" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">รายละเอียดงานและหน้าที่ที่รับผิดชอบ</h4>
+          <p class="text-light">จัดโครงการรับน้องสานสัมพันธ์น้องใหม่ลูกยาง #8 ที่เต็มไปด้วยความสนุกมากมาย โดยรับหน้าที่เป็นรองหัวหน้าในฝ่ายสวัสดิการ</p>
+        <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ผู้จัด: </strong> ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">สถานที่: </strong> คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ทักษะที่ได้: </strong> การบริหารจัดการโครงการ และการสื่อสาร</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">วันที่จัด: </strong> วันที่ 6 กรกฏาคม 2568 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="activityModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold">พาน้องลงทะเบียนเรียน สาขา สื่อนฤมิต CMD68 🌱🌱</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/activity5.png" alt="Volunteer" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">บทบาทและผลลัพธ์</h4>
+          <p class="text-light">กิจกรรมช่วยน้องลงทะเบียนเรียน ในวันที่ 20 มิถุนายน 2568 เป็นทีมงานปี 2 ช่วยพาน้องลงทะเบียนเรียน</p>
+        <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ผู้จัด: </strong> ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">สถานที่: </strong> คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ทักษะที่ได้: </strong> การสื่อสาร การอธิบาย และการจัดการปัญหา</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">วันที่จัด: </strong> วันที่ 20 มิถุนายน 2568 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="activityModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold">Workshop Visual Development! 🎨✨</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/activity6.jpg" alt="Certification" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">รายละเอียดและองค์ความรู้ที่ได้รับ</h4>
+          <p class="text-light">Workshop เทคนิคการวาง Concept งานแอนิเมชัน และแรงบันดาลใจ จากวิทยากร คุณ Amo Kannika ที่มาแบ่งปันความรู้ ประสบการณ์ และแลกเปลี่ยนไอเดียสร้างสรรค์ผลงานดีๆ ร่วมกันกับ "นิสิตสื่อนฤมิต"</p>
+        <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ผู้จัด: </strong> ภาควิชาสื่อนฤมิต คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">สถานที่: </strong> คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ทักษะที่ได้: </strong> ทคนิคการวาง Concept งานแอนิเมชัน สายงาน และแรงบันดาลใจ</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">วันที่จัด: </strong> วันที่ 6 มีนาคม 2569 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Component -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="navbar-brand-custom mb-2 d-inline-flex" href="index.html">
+            <div class="brand-square-b">
+              <span>B</span>
+            </div>
+            <span class="brand-text-spooky">BENCHAWAN</span>
+          </a>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="mailto:nongaorn35@gmail.com" class="social-circle-link" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/aemonrp_pk/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/nongaorn35-rp" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 My Portfolio • Benchawan Runnaphong</p>
+        <p class="designer-text">Designed with <i class="fa-solid fa-heart text-danger mx-1"></i> by Benchawan Runnaphong (Graphic & Game Designer)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Floating Button -->
+  <button class="scroll-to-top" id="scrollToTopBtn" type="button" aria-label="เลื่อนขึ้นด้านบน" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/activity.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

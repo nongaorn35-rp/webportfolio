@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio ส่วนตัวสำหรับนักศึกษาสาขาสื่อนฤมิต (Creative Media) - Benchawan Runnaphong">
+  <meta name="author" content="Benchawan Runnaphong">
+  <title>Home | Benchawan Runnaphong - Graphic & Game Designer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Silkscreen (Pixel Heading), Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <style>
+    /* Global Pure Black Background Override for Home */
+    body {
+      background-color: #000000 !important;
+      color: #ffffff;
+    }
+    .custom-navbar {
+      background: rgba(12, 5, 26, 0.92) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(168, 85, 247, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader Loading Animation -->
+  <div id="preloader">
+    <div class="loader-spinner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-text">BENCHAWAN • PORTFOLIO</div>
+  </div>
+
+  <!-- Header & Navigation Bar (Matching Image 1 & 2) -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <!-- Brand Logo: [B] BENCHAWAN -->
+        <a class="navbar-brand-custom" href="index.html">
+          <div class="brand-square-b">
+            <span>B</span>
+          </div>
+          <span class="brand-text-spooky">BENCHAWAN</span>
+        </a>
+
+        <!-- Right Side: Dark/Light Mode Button & Mobile Toggler -->
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          
+          <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><i class="fa-solid fa-house-chimney me-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html"><i class="fa-solid fa-graduation-cap me-1"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-briefcase me-1"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activity.html"><i class="fa-solid fa-calendar-check me-1"></i> Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =================================================================
+       * 1. HERO SECTION: SPOOKY HALLOWEEN MOON (IMAGE 1)
+       * Giant Yellow Moon, Dead Trees, Pumpkins & Slow Bouncing Down Arrow
+       ================================================================= -->
+  <section class="hero-spooky-section" id="home">
+    <!-- Floating Purple & Yellow Glowing Particles Canvas -->
+    <div class="hero-particles-canvas" id="heroParticles"></div>
+
+    <div class="container hero-spooky-container">
+      <h1 class="about-pixel-title">BENCHAWAN RUNNAPHONG</h1>
+      <p class="hero-spooky-subtitle">Graphic & Game Designer</p>
+
+      <!-- Animated Down Arrow (Slow Bouncing, Clickable to Scroll Down) -->
+      <div class="hero-arrow-wrapper">
+        <a href="#about" class="hero-scroll-down-btn" id="scrollDownBtn" aria-label="เลื่อนลงไปยังส่วน About Me" title="เลื่อนลงเพื่อดูข้อมูล">
+          v
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       * 2. ABOUT ME SECTION: CYBERPUNK HUD (IMAGE 2)
+       * Background: 100% Solid Black (#000000)
+       * Right: Personal Profile HUD Card with Icons & Quotes
+       ================================================================= -->
+  <section class="about-cyber-section" id="about">
+    <div class="container">
+      
+      <!-- Top Cyber Sub-Header: Mini Logo, Angled Line, ABOUT ME & ✦ PORTFOLIO ✦ -->
+      <div class="about-top-bar">
+        
+        <h2 class="about-pixel-title">ABOUT ME</h2>
+        <div class="about-sparkle-sub">✦ profile ✦</div>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div class="row align-items-stretch gy-5">
+        
+        <!-- Left Column: Photo Card with Neon Purple Border & Yellow Corner Brackets -->
+        <div class="col-lg-5">
+          <div class="cyber-photo-container">
+            <div class="cyber-photo-card">
+              <!-- Bright Yellow Accent Corner Brackets (Image 2) -->
+              <div class="corner-bracket-tl"></div>
+              <div class="corner-bracket-br"></div>
+              
+              <!-- Photo Frame with Circular Purple Halo Backdrop -->
+              <div class="photo-inner-halo">
+                <img src="assets/images/Me.jpg" alt="Benchawan Runnaphong" onerror="this.onerror=null; this.src='assets/images/avatar.svg';">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Personal Profile HUD Card with Top Badge Header -->
+        <div class="col-lg-7">
+          <div class="cyber-hud-card">
+            <!-- Top Offset Badge: ประวัติส่วนตัว (Image 2) -->
+            <div class="hud-badge-header">
+              <div class="hud-badge-icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="hud-badge-title">ประวัติส่วนตัว</span>
+            </div>
+
+            <!-- Profile Info Rows with Icons -->
+            <div class="hud-info-list">
+              <!-- Row 1: ชื่อ - นามสกุล -->
+              <div class="hud-info-row">
+                <div class="hud-info-label-wrap">
+                  <i class="fa-solid fa-user hud-row-icon"></i>
+                  <span>ชื่อ - นามสกุล</span>
+                </div>
+                <div class="hud-info-colon">:</div>
+                <div class="hud-info-value">เบญจวรรณ รุณพงษ์</div>
+              </div>
+
+              <!-- Row 2: วันเกิด -->
+              <div class="hud-info-row">
+                <div class="hud-info-label-wrap">
+                  <i class="fa-solid fa-calendar-days hud-row-icon"></i>
+                  <span>วันเกิด</span>
+                </div>
+                <div class="hud-info-colon">:</div>
+                <div class="hud-info-value">17 สิงหาคม 2547</div>
+              </div>
+
+              <!-- Row 3: ที่อยู่ -->
+              <div class="hud-info-row">
+                <div class="hud-info-label-wrap">
+                  <i class="fa-solid fa-location-dot hud-row-icon"></i>
+                  <span>ที่อยู่</span>
+                </div>
+                <div class="hud-info-colon">:</div>
+                <div class="hud-info-value">มหาสารคาร</div>
+              </div>
+
+              <!-- Row 4: การศึกษา -->
+              <div class="hud-info-row">
+                <div class="hud-info-label-wrap">
+                  <i class="fa-solid fa-graduation-cap hud-row-icon"></i>
+                  <span>การศึกษา</span>
+                </div>
+                <div class="hud-info-colon">:</div>
+                <div class="hud-info-value">ปริญญาตรี คณะวิทยาการสารสนเทศ สาขาสื่อนฤมิต มหาวิทยาลัยมหาสารคาม</div>
+              </div>
+
+              <!-- Row 5: ความสนใจ -->
+              <div class="hud-info-row">
+                <div class="hud-info-label-wrap">
+                  <i class="fa-solid fa-heart hud-row-icon"></i>
+                  <span>ความสนใจ</span>
+                </div>
+                <div class="hud-info-colon">:</div>
+                <div class="hud-info-value">การออกแบบกราฟิก, เกม, แอนิเมชัน</div>
+              </div>
+            </div>
+
+            <!-- Quote Box at Bottom (Image 2) -->
+            <div class="hud-quote-box">
+              <span class="quote-mark">“</span>
+              <p class="quote-text">อยากสร้างสรรค์งานดีๆ ที่มีความหมาย และพัฒนาตัวเองไปเรื่อยๆ</p>
+              <span class="quote-mark">”</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       * 3. SKILLS SECTION WITHOUT PERCENTAGES
+       * Background: 100% Solid Black (#000000)
+       * Progress Bars without any percentage numbers
+       * 2x2 Feature Cards Grid (Game Design, Graphic, Motion, UI/UX)
+       ================================================================= -->
+  <section class="skills-cyber-section" id="skills">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        
+        <!-- Left Column: Clean Progress Tracks (NO PERCENTAGES) -->
+        <div class="col-lg-6">
+          <h3 class="skills-cyber-title">SKILLS</h3>
+          <p class="skills-cyber-desc">
+            ทักษะความเชี่ยวชาญด้านโปรแกรมและเครื่องมือสร้างสรรค์สื่อดิจิทัล สื่อนฤมิต และเกมดีไซน์
+          </p>
+
+          <div class="clean-skill-row">
+            <div class="clean-skill-name">
+              <i class="fa-solid fa-palette"></i> Drawing
+            </div>
+          </div>
+
+          <div class="clean-skill-row">
+            <div class="clean-skill-name">
+              <i class="fa-solid fa-palette"></i> Character Design
+            </div>
+          </div>
+
+          <div class="clean-skill-row">
+            <div class="clean-skill-name">
+              <i class="fa-solid fa-bezier-curve"></i> UI/UX Design
+            </div>
+          </div>
+
+          <div class="clean-skill-row">
+            <div class="clean-skill-name">
+              <i class="fa-solid fa-pen-nib"></i> Coding
+            </div>
+          </div>
+
+
+          <div class="clean-skill-row">
+            <div class="clean-skill-name">
+              <i class="fa-solid fa-pen-nib"></i>Storytelling
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- Right Column: 2x2 Feature Skill Cards -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <!-- Card 1: Game Design -->
+            <div class="col-sm-6">
+              <div class="cyber-2x2-card">
+                <div class="cyber-2x2-icon">
+                  <img src="assets/images/ibispaintx.jpg" alt="After Effects" class="cyber-skill-pixel-img">
+                </div>
+                <h4 class="cyber-2x2-title">ibispaintx</h4>
+              </div>
+            </div>
+
+            <!-- Card 2: Graphic Design -->
+            <div class="col-sm-6">
+              <div class="cyber-2x2-card">
+                <div class="cyber-2x2-icon">
+                  <img src="assets/images/figma.png" alt="Figma="cyber-skill-pixel-img">
+                </div>
+                <h4 class="cyber-2x2-title">Figma</h4>
+              </div>
+            </div>
+
+            <!-- Card 3: Motion Design -->
+            <div class="col-sm-6">
+              <div class="cyber-2x2-card">
+                <div class="cyber-2x2-icon">
+                  <img src="assets/images/Ae.svg" alt="After Effects" class="cyber-skill-pixel-img">
+                </div>
+                <h4 class="cyber-2x2-title">After Effects</h4>
+              </div>
+            </div>
+
+            <!-- Card 4: UI/UX Design -->
+            <div class="col-sm-6">
+              <div class="cyber-2x2-card">
+                <div class="cyber-2x2-icon">
+                  <img src="assets/images/unity.jpeg" alt="Unity" class="cyber-skill-pixel-img">
+                </div>
+                <h4 class="cyber-2x2-title">Unity</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       * 4. EXPLORE PAGES SECTION
+       * Background: 100% Solid Black (#000000)
+       * Quick Cards to Education, Portfolio, Activity, Contact
+       ================================================================= -->
+  <section class="explore-cyber-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="about-pixel-title fs-2 mb-2">EXPLORE PAGES</h3>
+      </div>
+
+      <div class="row g-4">
+        <!-- Education Card -->
+        <div class="col-md-4">
+          <div class="cyber-2x2-card p-4 text-center">
+            <div class="cyber-2x2-icon mx-auto">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Education</h4>
+            <p class="text-light small flex-grow-1">ประวัติการศึกษาทุกระดับชั้น</p>
+            <a href="education.html" class="btn btn-outline-custom btn-sm mt-3 w-100">
+              ดูประวัติการศึกษา <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Portfolio Card -->
+        <div class="col-md-4">
+          <div class="cyber-2x2-card p-4 text-center">
+            <div class="cyber-2x2-icon mx-auto">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Portfolio</h4>
+            <p class="text-light small flex-grow-1">คลังผลงานสร้างสรรค์ Character Design, Logo Design, ภาพถ่าย และ AI Media</p>
+            <a href="portfolio.html" class="btn btn-outline-custom btn-sm mt-3 w-100">
+              ดูผลงานทั้งหมด <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Activity Card -->
+        <div class="col-md-4">
+          <div class="cyber-2x2-card p-4 text-center">
+            <div class="cyber-2x2-icon mx-auto">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Activity</h4>
+            <p class="text-light small flex-grow-1">กิจกรรมการอบรม เวิร์กช็อป การแข่งขัน และค่ายพัฒนาทักษะสื่อนฤมิต</p>
+            <a href="activity.html" class="btn btn-outline-custom btn-sm mt-3 w-100">
+              ดูกิจกรรมอบรม <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Component -->
+  <footer class="site-footer" style="background: #000000; border-top: 1px solid rgba(168, 85, 247, 0.25);">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="navbar-brand-custom mb-2 d-inline-flex" href="index.html">
+            <div class="brand-square-b">
+              <span>B</span>
+            </div>
+            <span class="brand-text-white">BENCHAWAN</span>
+          </a>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="mailto:nongaorn35@gmail.com" class="social-circle-link" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/aemonrp_pk/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/nongaorn35-rp" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 My Portfolio • Benchawan Runnaphong</p>
+        <p class="designer-text">Designed with <i class="fa-solid fa-heart text-danger mx-1"></i> by Benchawan Runnaphong (Graphic & Game Designer)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Floating Button -->
+  <button class="scroll-to-top" id="scrollToTopBtn" type="button" aria-label="เลื่อนขึ้นด้านบน" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Smooth Scroll Script for the Hero Down Arrow -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollDownBtn = document.getElementById('scrollDownBtn');
+      if (scrollDownBtn) {
+        scrollDownBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const target = document.getElementById('about');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio ผลงานด้านสื่อนฤมิต (Creative Media) - Motion Graphic, UI/UX, Video, Photography, AI Media">
+  <meta name="author" content="Benchawan Runnaphong">
+  <title>Portfolio | Benchawan Runnaphong - Creative Media Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Silkscreen (Pixel Heading), Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Glowing Orbs Background -->
+  <div class="bg-ambient">
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+  </div>
+
+  <!-- Preloader Loading Animation -->
+  <div id="preloader">
+    <div class="loader-spinner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-text">CREATIVE MEDIA PORTFOLIO</div>
+  </div>
+
+  <!-- Header & Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <!-- Brand Logo: [B] BENCHAWAN -->
+        <a class="navbar-brand-custom" href="index.html">
+          <div class="brand-square-b">
+            <span>B</span>
+          </div>
+          <span class="brand-text-spooky">BENCHAWAN</span>
+        </a>
+
+        <!-- Right Side: Mobile Toggler -->
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house-chimney me-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html"><i class="fa-solid fa-graduation-cap me-1"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html"><i class="fa-solid fa-briefcase me-1"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activity.html"><i class="fa-solid fa-calendar-check me-1"></i> Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fa-solid fa-paper-plane me-1"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-glow"></div>
+    <div class="container position-relative">
+      <div class="section-title-wrapper reveal">
+        <span class="section-tag">✦ MY WORKS GALLERY ✦</span>
+        <h1 class="about-pixel-title">Portfolio</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Showcase Section -->
+  <section class="portfolio-section pt-0">
+    <div class="container">
+      
+      <!-- Filter Category Buttons -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="filter-btn" data-filter="Character">Character Design</button>
+        <button class="filter-btn" data-filter="Logo">Logo Design</button>
+        <button class="filter-btn" data-filter="photo">Photography</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX & Web</button>
+        <button class="filter-btn" data-filter="video">Video & Film</button>
+        <button class="filter-btn" data-filter="ai">AI Creative Media</button>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row g-4" id="portfolioGrid">
+
+        <!-- Project 1: Character Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Character">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imgch1.png" alt="Cyberpunk Neo-Bangkok" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบตัวละคร: Lin</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบตัวละคร: Lin</h3>
+              <p class="portfolio-desc">ออกแบบตัวละคร: Lin Character Design ผลงานออกแบบตัวละคร Lin สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- Project 2: Branding -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Character">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imgch2.png" alt="Lumina Specialty Coffee" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบตัวละคร: Kai</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบตัวละคร: Kai</h3>
+              <p class="portfolio-desc">ออกแบบตัวละคร: Kai Character Design ผลงานออกแบบตัวละคร Kai สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Character Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Character">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imgch3.png" alt="Aurora Music Festival" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบตัวละคร: Lena</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบตัวละคร: Lena</h3>
+              <p class="portfolio-desc">ออกแบบตัวละคร: Lena Character Design ผลงานออกแบบตัวละคร Lena สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Character Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Character">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imgch4.png" alt="Metaverse Art Gallery" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบตัวละคร: Adele</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบตัวละคร: Adele</h3>
+              <p class="portfolio-desc">ออกแบบตัวละคร: Adele Character Design ผลงานออกแบบตัวละคร Adele สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Character Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Character">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imgch5.png" alt="Echoes of Nature" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบตัวละคร: Daria</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบตัวละคร: Daria</h3>
+              <p class="portfolio-desc">ออกแบบตัวละคร: Daria Character Design ผลงานออกแบบตัวละคร Daria สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Character Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Character">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imgch6.png" alt="Synthesis AI Media Lab" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบตัวละคร OC</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบตัวละคร OC</h3>
+              <p class="portfolio-desc">ออกแบบตัวละคร: OC Character Design ผลงานออกแบบตัวละคร OC สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- Project 7: Logo Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Logo">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imglogo1.png" alt="Cyberpunk Neo-Bangkok" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบโลโก้</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบโลโก้</h3>
+              <p class="portfolio-desc">ผลงานออกแบบโลโก้สำหรับการศึกษา แสดงรายละเอียดสไตล์และแนวคิดการออกแบบของสินค้าเทียนหอม โดยใช้รูปทรงธรรมชาติ 9 แบบ มารวมกันเป็นภาพรวมที่สวยงาม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Logo Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Logo">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imglogo2.png" alt="Cyberpunk Neo-Bangkok" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบโลโก้</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal8">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบโลโก้</h3>
+              <p class="portfolio-desc">ผลงานออกแบบโลโก้สำหรับการศึกษา แสดงรายละเอียดสไตล์และแนวคิดการออกแบบของสินค้าเทียนหอม โดยใช้รูปทรงเรขาคณิต 9 แบบ มารวมกันเป็นภาพรวมที่สวยงาม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!-- Project 9: Logo Design -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="Logo">
+          <div class="portfolio-card card-glass">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/imglogo3.png" alt="Cyberpunk Neo-Bangkok" class="portfolio-img" loading="lazy">
+              <span class="portfolio-category-badge">ออกแบบโลโก้</span>
+              <div class="portfolio-overlay">
+                <button class="btn btn-primary-custom btn-sm view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal9">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> ดูรายละเอียด
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">ออกแบบโลโก้</h3>
+              <p class="portfolio-desc">ผลงานออกแบบโลโก้สำหรับการศึกษา แสดงรายละเอียดสไตล์และแนวคิดการออกแบบของสินค้าเทียนหอม โดยใช้รูปทรงอิสระ 9 แบบ มารวมกันเป็นภาพรวมที่สวยงาม</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+                <span class="portfolio-tag">ibis paint x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true ">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal1Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร: Lin</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imgch1.png" alt="Cyberpunk Character" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">ผลงานออกแบบตัวละคร Lin สำหรับโปรเจกต์นิยาย แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Character Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 2 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Character Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal2Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร: Kai</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imgch2.png" alt="ออกแบบตัวละคร: Kai" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">คอนเซปต์อาร์ตตัวละคร Kai สไตล์เรียบหรู เน้นโทนสีเย็นและบรรยากาศยามค่ำคืน</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Character Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 2 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Character Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal3Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร: Lena</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imgch3.png" alt="Aurora Photo" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">คอนเซปต์อาร์ตตัวละคร Lena เน้นสไตล์การแต่งกายแบบโกธิคและอิริยาบถต่างๆ</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Character Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 2 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Character Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal4Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร: Adele</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imgch4.png" alt="ออกแบบตัวละคร: Adele" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">ออกแบบตัวละครหลักสำหรับโปรเจกต์เกมแนวแฟนตาซี แสดงรายละเอียดชุด สีหน้า และมุมมองตัวละครหลายมุม</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Character Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 2 วัน</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Character Design Game</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal5Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร: Daria</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imgch5.png" alt="ออกแบบตัวละคร: Daria" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">ออกแบบตัวละครแม่มดสำหรับโปรเจกต์เกมแนวแฟนตาซี ในโทนสีเข้มลึกลับ ตกแต่งด้วยพัดลายลูกไม้ และรายละเอียดพรอพประจำตัว</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Character Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 1 วัน</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Character Design Game</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal6Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร OC</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imgch6.png" alt="ออกแบบตัวละคร OC" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">มาสคอตประจำตัวสำหรับนำไปใช้ในงานสื่อต่างๆ ส่วนตัว ออกแบบโดยใช้สีน้ำเงินและขาวเป็นสีประจำตัว ใส่รายละเอียดของดอกซากกุระกับจิ้งจอกที่เป็นดอกไม้และสัตว์ที่ชอบ</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Character Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 1 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Character Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7 -->
+  <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal7Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร OC</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imglogo1.png" alt="ออกแบบโลโก้" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">ผลงานออกแบบโลโก้สำหรับการศึกษา แสดงรายละเอียดสไตล์และแนวคิดการออกแบบของสินค้าเทียนหอม โดยใช้รูปทรงธรรมชาติ 9 แบบ มารวมกันเป็นภาพรวมที่สวยงาม</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Logo Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 1 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Logo Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8 -->
+  <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="projectModal8Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal8Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร OC</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imglogo2.png" alt="ออกแบบโลโก้" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">ผลงานออกแบบโลโก้สำหรับการศึกษา แสดงรายละเอียดสไตล์และแนวคิดการออกแบบของสินค้าเทียนหอม โดยใช้รูปทรงเรขาคณิต 9 แบบ มารวมกันเป็นภาพรวมที่สวยงาม</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Logo Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 1 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Logo Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 9 -->
+  <div class="modal fade" id="projectModal9" tabindex="-1" aria-labelledby="projectModal9Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-custom bg-dark text-light">
+        <div class="modal-header modal-header-custom">
+          <h3 class="modal-title h5 fw-bold" id="projectModal9Label"><i class="fa-solid fa-palette text-warning me-2"></i>ออกแบบตัวละคร OC</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <img src="assets/images/imglogo3.png" alt="ออกแบบโลโก้" class="img-fluid rounded-4 mb-4 w-100">
+          <h4 class="h6 fw-bold text-gradient-yellow mb-2">แนวคิดและการสร้างสรรค์</h4>
+          <p class="text-light">ผลงานออกแบบโลโก้สำหรับการศึกษา แสดงรายละเอียดสไตล์และแนวคิดการออกแบบของสินค้าเทียนหอม โดยใช้รูปทรงอิสระ 9 แบบ มารวมกันเป็นภาพรวมที่สวยงาม</p>
+          <div class="row g-3 my-2">
+            <div class="col-sm-6"><strong class="text-gradient-yellow">หมวดหมู่:</strong> Logo Design</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ซอฟต์แวร์:</strong> ibis Paint X</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">ระยะเวลา:</strong> 1 สัปดาห์</div>
+            <div class="col-sm-6"><strong class="text-gradient-yellow">บทบาท:</strong> Logo Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer Component -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="navbar-brand-custom mb-2 d-inline-flex" href="index.html">
+            <div class="brand-square-b">
+              <span>B</span>
+            </div>
+            <span class="brand-text-spooky">BENCHAWAN</span>
+          </a>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="mailto:nongaorn35@gmail.com" class="social-circle-link" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/aemonrp_pk/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/nongaorn35-rp" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 My Portfolio • Benchawan Runnaphong</p>
+        <p class="designer-text">Designed with <i class="fa-solid fa-heart text-danger mx-1"></i> by Benchawan Runnaphong (Graphic & Game Designer)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Floating Button -->
+  <button class="scroll-to-top" id="scrollToTopBtn" type="button" aria-label="เลื่อนขึ้นด้านบน" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
